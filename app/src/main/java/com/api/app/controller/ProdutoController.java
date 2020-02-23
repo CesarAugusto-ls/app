@@ -21,7 +21,7 @@ public class ProdutoController extends ProdutoService{
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Produto> consultaPorID(@PathVariable Integer id) {
+	public ResponseEntity<Produto> consultaPorID(@PathVariable Long id) {
 		return consultaID(id);
 	}
 

@@ -21,7 +21,7 @@ public class ProdutoService {
 		return (List<Produto>) prodR.findAll();
 	}
 	
-	public ResponseEntity<Produto> consultaID(Integer id) {
+	public ResponseEntity<Produto> consultaID(Long id) {
 		
 		Optional<Produto> produto = prodR.findById(id);
 		if (produto.isPresent()) {

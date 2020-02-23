@@ -16,13 +16,14 @@ public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.TABLE, generator="hibernate_sequence") 
-	private int idPessoa;
+	private Long idProduto;
 	private String nome;
-	public int getIdPessoa() {
-		return idPessoa;
+	
+	public Long getIdPessoa() {
+		return idProduto;
 	}
-	public void setIdPessoa(int idPessoa) {
-		this.idPessoa = idPessoa;
+	public void setIdPessoa(Long idPessoa) {
+		this.idProduto = idPessoa;
 	}
 	public String getNome() {
 		return nome;

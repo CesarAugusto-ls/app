@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 import com.api.app.model.Produto;
 
 @Repository
-public interface ProdutoRepository extends CrudRepository<Produto, Integer>{
+public interface ProdutoRepository extends CrudRepository<Produto, Long>{
 
 }
