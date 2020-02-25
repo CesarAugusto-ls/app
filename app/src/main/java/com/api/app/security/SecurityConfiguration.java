@@ -15,6 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.api.app.repository.UsuarioRepository;
+import com.api.app.service.AutenticacaoService;
 import com.api.app.service.TokenService;
 
 @EnableWebSecurity
@@ -64,6 +65,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring()
         .antMatchers("/**.html", "/v2/api-docs", "/webjars/**", "/configuration/**", "/swagger-resources/**");
-}
+	}
 
 }
